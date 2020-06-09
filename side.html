@@ -1,0 +1,43 @@
+    <div class="form">
+      <div class="col-sm-12 form-dialog">
+
+      <form method="post" id="requirement_form">
+        <div class="form form-primary">
+          <div class="form-heading">
+
+
+
+	      		<div class="form-heading">
+	        		<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="form-title">{{modalTitle}}</h4>
+	      		</div>
+	      		<div class="form-body">
+	      			<div class="alert alert-danger alert-dismissible" ng-show="error" >
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						{{errorMessage}}
+					</div>
+					<div class="form-group">
+						<label>Enter First Name</label>
+						<input type="text" name="identifier" ng-model="identifier" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Enter Last Name</label>
+						<input type="text" name="req_description" ng-model="req_description" class="form-control" />
+					</div>
+	      		</div>
+	      		<div class="form-footer">
+	      			<input type="hidden" name="hidden_id" value="{{hidden_id}}" />
+	      			<input type="submit" name="submit" id="submit" class="btn btn-info" value="{{submit_button}}" data-target="form_data" />
+	        		<button type="button" class="btn btn-default">Close</button>
+	        	</div>
+
+
+			</div>	
+        </div>
+        </form>
+         
+
+
+
+      </div>
+  </div>
